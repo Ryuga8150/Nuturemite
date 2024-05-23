@@ -39,7 +39,7 @@ app.use("/api/orders", orderRouter);
 
 // const pathNew = path.join(__dirname, "..", "/client/dist");
 // console.log(__dirname, pathNew);
-// app.use(express.static(path.join(__dirname, "..", "/client/dist")));
+app.use(express.static(path.join(__dirname, "..", "/client/dist")));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html"));

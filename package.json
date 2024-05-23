@@ -1,0 +1,33 @@
+{
+  "name": "nuturemite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon api/server.js",
+    "prod": "set NODE_ENV=production&& nodemon api/server.js",
+    "start": "node api/server.js",
+    "install-server": "npm install",
+    "install-client": "npm install --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "morgan": "^1.10.0",
+    "react-redux": "^9.1.2",
+    "redux-persist": "^6.0.0",
+    "stripe": "^15.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

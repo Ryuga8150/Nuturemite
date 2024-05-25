@@ -22,13 +22,13 @@ function SocialMediaLinks({ className = "" }) {
   ];
 
   return (
-    <div className="flex gap-2 align-center">
+    <div className="flex gap-4 self-end mr-6">
       {/* Map over the array of social media logos */}
       {socialMediaLogos.map((socialMedia, index) => {
         const { Logo } = socialMedia;
         return (
           <div key={index} className="bg-slate-100 p-1.5 rounded-xl">
-            <Logo className="w-3.5 h-3.5" />
+            <Logo className="w-4 h-4" />
           </div>
         );
       })}

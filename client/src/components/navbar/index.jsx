@@ -13,16 +13,16 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <div className="flex flex-col items-center gap-2 justify-items-end">
-        <div className="flex gap-2">
+      <div className="flex flex-col items-center gap-1 justify-items-end">
+        {/* <div className="flex gap-2">
           <p>about us</p>
           <p>contact us</p>
           <p>phone number</p>
           <p>Search</p>
-        </div>
+        </div> */}
 
-        <NavbarButtonLinks />
         <SocialMediaLinks />
+        <NavbarButtonLinks />
       </div>
     </div>
   );
